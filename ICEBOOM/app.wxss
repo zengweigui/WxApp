@@ -1,0 +1,63 @@
+@charset "utf-8";
+page,
+view,
+text { padding: 0; margin: 0; box-sizing: border-box; }
+/*隐藏*/
+.hide { display: none; }
+.show { display: block; }
+/* 清除浮动 clearfix */
+.left { float: left; }
+.right { float: right; }
+.clearfix:before,
+.clearfix:after { content: ""; display: table; clear: both; overflow: hidden; }
+.clearfix { zoom: 1; }
+/*弹性布局*/
+.flex { display: flex; }
+.flex-all-center { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.flex-column { flex-direction: column; }
+.flex-direction-row { flex-direction: row; }
+.space-between { justify-content: space-between; }
+.space-around { justify-content: space-around; }
+.justify-content-center { justify-content: center; }
+.align-items-center { align-items: center; }
+.align-items-normal { align-items: normal!important; }
+.flex-end { align-self: flex-end; }
+.flex-equal { flex: 1; }
+.flex-right { margin-left: auto!important; } /*在flex布局下，对某个子元素靠右对齐*/
+.flex-bottom { display: flex; align-items: flex-end; } /*在flex布局下，对某个子元素靠底对齐*/
+.flex-grow2 { flex-grow: 2; }
+.flex-grow3 { flex-grow: 3; }
+.flex-hang { flex: 1; justify-content: flex-start; } /* 悬挂式布局 */
+/*字体*/
+.bold { font-weight: bold!important; }
+.f20 { font-size: 20rpx!important; }
+.f24 { font-size: 24rpx!important; }
+.f28 { font-size: 28rpx!important; }
+.f32 { font-size: 32rpx!important; }
+.f36 { font-size: 36rpx!important; }
+.f40 { font-size: 40rpx!important; }
+.f44 { font-size: 44rpx!important; }
+.f48 { font-size: 48rpx!important; }
+.f52 { font-size: 52rpx!important; }
+/*字体颜色*/
+.c-fff { color: #fff!important; }
+.c-333 { color: #333!important; }
+.c-666 { color: #666!important; }
+.c-999 { color: #999!important; }
+/*内边距*/
+.ptb40 { padding-top: 40rpx!important; padding-bottom: 40rpx!important; }
+.plr40 { padding-left: 40rpx!important; padding-right: 40rpx!important; }
+.pt40 { padding-top: 40rpx; }
+.pb40 { padding-bottom: 40rpx; }
+.pl40 { padding-left: 40rpx; }
+.pr40 { padding-right: 40rpx; }
+.plr24 { padding-left: 24rpx; padding-right: 24rpx; }
+.ptb24 { padding-top: 24rpx!important; padding-bottom: 24rpx!important; }
+.pt24 { padding-top: 24rpx; }
+.pb24 { padding-bottom: 24rpx; }
+.pl24 { padding-left: 24rpx; }
+.pr24 { padding-right: 24rpx; }
+
+/*超出隐藏省略*/
+.oneEllipsis { overflow: hidden; text-overflow:ellipsis; white-space: nowrap; } /* 单行隐藏 */
+.twoEllipsis { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; } /* 两行隐藏 */

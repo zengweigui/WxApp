@@ -1,0 +1,49 @@
+<view class="content">
+  <view class="layout-top">
+    <scroll-view scroll-x="true" scroll-left="{{screenPrevDataLeft}}" style='font-size:{{screenPrevDataFontSize}}rpx'>
+      <text class='screen-prev-data'>{{screenPrevData}}</text>
+    </scroll-view>
+    <scroll-view scroll-x="true" scroll-left="{{screenDataLeft}}" style="font-size:{{screenDataFontSize}}rpx">
+      <text class='screen-data'>{{screenData}}</text>
+    </scroll-view>
+  </view>
+  <view class="layout-bottom">
+    <view class="btnGroup">
+      <view class="item operate" bindtap="clickBtn" id="{{idclear}}">С</view>
+      <view class="item operate" bindtap="history">H</view>
+      <view class="item operate" bindtap="clickBtn" id="{{idback}}">←</view>
+      <view class="item operate" bindtap="clickBtn" id="{{iddiv}}">÷</view>
+    </view>
+    <view class="btnGroup">
+      <view class="item" bindtap="clickBtn" id="{{id9}}">9</view>
+      <view class="item" bindtap="clickBtn" id="{{id8}}">8</view>
+      <view class="item" bindtap="clickBtn" id="{{id7}}">7</view>
+      <view class="item operate" bindtap="clickBtn" id="{{idx}}">×</view>
+    </view>
+    <view class="btnGroup">
+      <view class="item" bindtap="clickBtn" id="{{id6}}">6</view>
+      <view class="item" bindtap="clickBtn" id="{{id5}}">5</view>
+      <view class="item" bindtap="clickBtn" id="{{id4}}">4</view>
+      <view class="item operate" bindtap="clickBtn" id="{{idj}}">－</view>
+    </view>
+    <view class="btnGroup">
+      <view class="item" bindtap="clickBtn" id="{{id3}}">3</view>
+      <view class="item" bindtap="clickBtn" id="{{id2}}">2</view>
+      <view class="item" bindtap="clickBtn" id="{{id1}}">1</view>
+      <view class="item operate" bindtap="clickBtn" id="{{idadd}}">＋</view>
+    </view>
+    <view class="btnGroup">
+      <view class="item zero" bindtap="clickBtn" id="{{id0}}">0</view>
+      <view class="item" bindtap="clickBtn" id="{{idd}}">.</view>
+      <view class="item operate equal" bindtap="clickBtn" id="{{idequal}}">＝</view>
+    </view>
+  </view>
+</view>
+
+<!-- 
+  笔记：
+  1、screenData在手机中出现换行的现象；overflow-x: scroll;无用，使用white-space: nowrap;强制不换行；
+  2、flex布局，数字在安卓手机中出现不垂直居中的情况；设置字体的行高等于高度可解决；
+  3、screenData为0的时候可输入-号，但其他操作符不可输入；
+  4、使用rpn.js模拟eval()函数，来进行运算
+ -->

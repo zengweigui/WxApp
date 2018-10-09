@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-movie-detail": "/components/douban-movie/detail/index"
+  },
+  "navigationBarTitleText": "影片详情"
+}

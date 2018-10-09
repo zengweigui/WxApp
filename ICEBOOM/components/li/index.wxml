@@ -1,0 +1,11 @@
+<block wx:for="{{lis}}" wx:key="{{index}}">
+  <view class='li flex align-items-center' data-category="{{item.category}}" bindtap="onLi">
+    <text class='f28 c-333'>{{item.name}}</text>
+    <view class='flex align-items-center flex-right'>
+      <text class='f24 c-999'>{{item.explain}}</text>
+      <block wx:if="{{item.rightArrow}}">
+          <image class='right-arrow' src='http://m.zuke.com/images/right-arrow-fine-icon.png'></image>
+      </block>
+    </view>
+  </view>
+</block>

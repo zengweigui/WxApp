@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-swiper": "/components/swiper/index"
+  },
+  "navigationBarTitleText": "轮播图应用"
+}

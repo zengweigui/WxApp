@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/swiper/index",
+    "pages/waterfall/index",
+    "pages/calculator/index/index",
+    "pages/calculator/history/index",
+    "pages/douban-movie/index/index",
+    "pages/douban-movie/detail/index",
+    "pages/map-periphery/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ICE BOOM",
+    "navigationBarTextStyle": "black"
+  }
+}

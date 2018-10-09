@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-perimeter": "/components/map/index"
+  },
+  "navigationBarTitleText": "周边地图"
+}

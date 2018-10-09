@@ -1,0 +1,12 @@
+<view class="content">
+  <view class="left">
+    <block wx:for="{{left}}" wx:key="index">
+      <image src="{{item.url}}" class="slide-image" data-src="{{item.url}}" style="height: {{item.height}}rpx;" mode="widthFix" bindtap="preview"/>
+    </block>
+  </view>
+  <view class="right">
+    <block wx:for="{{right}}" wx:key="index">
+      <image src="{{item.url}}" class="slide-image" data-src="{{item.url}}" style="height: {{item.height}}rpx;" mode="widthFix" bindtap="preview" />
+    </block>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+@import "/app.wxss";
+.li { width: 100%; min-height: 64rpx; padding: 28rpx 24rpx; border-bottom: 1px solid #eee; }
+.li > text { font-size: 32rpx; }
+.li .right-arrow { width: 14rpx; height: 26rpx; margin-left: 24rpx; }
+.li:active { background-color: #eee; }

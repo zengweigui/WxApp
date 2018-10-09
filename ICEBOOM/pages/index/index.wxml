@@ -1,0 +1,23 @@
+<view class='top'>
+  <view class='user-info' wx:if="{{showAgree === false}}">
+    <image src="{{avatar}}" class='avatar'></image>
+    <text class='nickName'>您好，{{nickName}}</text>
+  </view>
+  <view class='user-info' wx:else>
+    <button open-type="getUserInfo" class="agree" bindgetuserinfo="agreeGetUser" lang="zh_CN">获取用户信息</button>
+  </view>
+  <view class='weather-box'>
+    <view class='iconfont {{weatherIcon}}'></view> 
+    <view class='details'>
+      <text class='city'>{{city}}</text>
+      <text class='temperature'>{{temperature}}℃</text>
+      <text class='weather'>{{weather}}</text>
+    </view>
+  </view>
+</view>
+<view class='pt24 plr24'>
+  <text class='c-333 f28 bold'>应用：</text>
+</view>
+<view class="lis">
+  <v-li lis="{{lis}}" bind:handleTypeToParent="clickLi"></v-li>
+</view>

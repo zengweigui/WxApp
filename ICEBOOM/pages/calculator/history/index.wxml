@@ -1,0 +1,8 @@
+<view class="content" wx:if="{{logs.length > 0}}">
+  <block wx:for="{{logs}}" wx:for-item="log" wx:key="index">
+    <view class="item">{{log}}</view>
+  </block>
+</view>
+<view class='not-data' wx:else>
+  <text>暂无数据</text>
+</view>

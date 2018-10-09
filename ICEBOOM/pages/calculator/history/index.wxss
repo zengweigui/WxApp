@@ -1,0 +1,3 @@
+page { background-color: #313131; }
+.item { width: 100%; line-height: 100rpx; padding: 0 20rpx; font-size: 28rpx; color: #fff; border-bottom: 1px solid #fff; background-color: #313131; }
+.not-data { position: fixed; left: 50%; top: 50%; text-align: center; font-size: 32rpx; color: #fff; transform: translate(-50%, -50%) }

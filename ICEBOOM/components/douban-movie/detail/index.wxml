@@ -1,0 +1,32 @@
+<view class='box'>
+  <view class='top'>
+    <view class='bg'>
+      <image src='{{movie.images.large}}' mode="widthFix"></image>
+    </view>
+    <view class='info-box'>
+      <view class='main'>
+        <view class='pic'>
+          <image src="{{movie.images.large}}"></image>
+        </view>
+        <view class='info'>
+          <view class='title'>{{movie.title}}</view>
+          <view class='rating'>{{movie.rating.average}}<text class='fen'>分</text></view>
+          <text class='comments-count'>({{movie.comments_count}}人评)</text>
+          <view class='genres'>{{movie.genres}}</view>
+          <view class='countries'>{{movie.countries}}</view>
+          <view class='time'>{{movie.year}}{{movie.countries}}上映</view>
+        </view>
+      </view>
+    </view>
+    <view class='directors'>导演：<block wx:for="{{movie.directors}}" wx:key="index">{{item.name}}</block><block wx:if="{{(index + 1) < movie.directors.length}}">{{item.name}}</block></view>
+  </view>
+  <view class='casts-box'>
+    <text>演职人员</text>
+    <scroll-view class='casts' scroll-x="true">
+      <view class='item' wx:for="{{movie.casts}}" wx:key="index">
+        <view class='avatar'><image src='{{item.avatars.large}}'></image></view>
+        <view class='name'>{{item.name}}</view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

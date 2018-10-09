@@ -1,0 +1,1 @@
+<v-movie-detail movie="{{movie}}"></v-movie-detail>

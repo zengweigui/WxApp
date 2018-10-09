@@ -1,0 +1,2 @@
+<v-swiper imgUrls="{{imgUrls}}" autoplay="{{autoplay}}" interval="{{interval}}" indicator-dots="{{indicatorDots}}"></v-swiper>
+

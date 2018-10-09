@@ -1,0 +1,6 @@
+.content { text-align: justify; }
+image { display: block; width: 100%; margin-bottom: 16rpx; }
+.left,
+.right { width: 350rpx; }
+.left { margin: 0 8rpx 0 16rpx; }
+.right { margin: 0 16rpx 0 8rpx; }

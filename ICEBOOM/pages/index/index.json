@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-swiper": "/components/swiper/index",
+    "v-li": "/components/li/index"
+  },
+  "navigationBarTitleText": "ICE BOOM~"
+}

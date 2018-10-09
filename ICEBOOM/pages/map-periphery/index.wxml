@@ -1,0 +1,21 @@
+<view class='box'>
+  <v-perimeter longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" markers="{{markers}}" show-location="{{showLocation}}"></v-perimeter>
+  <view class='map-list'>
+    <view class='list-content' wx:if="{{aroundDetails.length > 0}}">
+      <view wx:for="{{aroundDetails}}" wx:key="index" class='item flex flex-column'>
+        <view class='flex'>
+          <view class='name'>{{item.name}}</view>
+          <view class='distance flex-right'>{{item.distance}}米</view>
+        </view>
+        <text class='address'>{{item.address}}</text>
+      </view>
+    </view>
+    <view class='list-content flex-all-center f24 c-333' wx:else>
+      <text wx:if="{{word == ''}}">请选择种类进行搜索</text>
+      <text wx:else>周围一千米范围内暂无{{word}}数据</text>
+    </view>
+    <scroll-view scroll-x="true" class='list-bottom'>
+      <text wx:for="{{aroundList}}" wx:key="index" class='{{item.id == category ? "active" : ""}}' data-word="{{item.name}}" data-category="{{item.id}}" bindtap='search'>{{item.name}}</text>
+    </scroll-view>
+  </view>
+</view>

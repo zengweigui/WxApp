@@ -1,0 +1,1 @@
+<view class="loadmore" data-loadmore="{{loadmore}}">{{loadmore}}</view>

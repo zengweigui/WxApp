@@ -1,0 +1,2 @@
+<v-movie-list movies="{{movies}}" bind:handleDetailToParent="clickMovie"></v-movie-list>
+<v-loadmore class="{{loadmoreShow ? '' : 'hide'}}" loadmore="{{loadmore}}"></v-loadmore>

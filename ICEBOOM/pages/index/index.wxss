@@ -1,0 +1,19 @@
+@import "/libs/css/weather-iconfont.wxss";
+page { background-color: #f9f9f9; }
+.lis { margin: 24rpx 0; background-color: #fff; border-top: 1px solid #eee; }
+.top { display: flex; width: 100%; height: 200rpx; border-bottom: 1px solid #eee; background-color: #fff; }
+.top .user-info { display: flex; align-items: center; width: 450rpx; height: 100%; padding: 0 20rpx; }
+.top .user-info .avatar { width: 100rpx; height: 100rpx; border-radius: 100rpx; background-color: #efefef; }
+.top .user-info .nickName { margin-left: 20rpx; font-size: 28rpx; color: #333; }
+.weather-box { display: flex; justify-content: center; align-items: flex-end; flex-direction: column; width: 300rpx; padding: 0 20rpx; }
+.weather-box .iconfont { width: 80rpx; height: 80rpx; margin-bottom: 10rpx; font-size: 64rpx; text-align: center; }
+.weather-box .details { font-size: 24rpx; color: #666; }
+.weather-box .details .temperature,
+.weather-box .details .weather { margin-left: 18rpx; }
+
+.iconfont { font-family:"iconfont" !important; font-size:16px; font-style:normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.icon-duoyun:before { content: "\e61d"; color: #666; }
+.icon-qing:before { content: "\e61f"; color: #ffcc33; }
+.icon-xiaoyu:before { content: "\e622"; color: #666; }
+.icon-yintian:before { content: "\e624"; color: #666; }
+.icon-tianqi-fengxiang:before { content: "\e679"; color: #000; }

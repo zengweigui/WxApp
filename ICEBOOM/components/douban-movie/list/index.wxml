@@ -1,0 +1,19 @@
+<block wx:for="{{movies}}" wx:for-item="items" wx:key="{{index}}">
+  <view class="movie" bindtap='seeDetail' data-movie='{{items}}'>
+    <view class="pic">
+      <image src="{{items.images.large}}" data-index="{{index}}" model="aspectFit" binderror='imgerror' />
+    </view>
+    <view class="info">
+      <view class="title oneEllipsis">{{items.title}}</view>
+      <view class='genres oneEllipsis'>{{items.genres}}</view>
+      <view class='casts oneEllipsis'>
+        主演：<text wx:for="{{items.casts}}" wx:for-item="item" wx:key="{{index}}">{{item.name}}<text wx:if="{{(index + 1) < 3}}">,</text></text>
+      </view>
+      <view class='flex'><text class='year'>上映年份：{{items.year}}</text><text class='countries'>（{{items.countries}}）</text></view>
+    </view>
+    <view class='rating'>{{items.rating.average}}分</view>
+  </view>
+</block>
+<block wx:if="{{isEmpty}}">
+  <view class='not-data'>暂无数据{{movies.length}}</view>
+</block>

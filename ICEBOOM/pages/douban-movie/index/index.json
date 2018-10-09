@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-movie-list": "/components/douban-movie/list/index",
+    "v-loadmore": "/components/loadmore/index"
+  },
+  "navigationBarTitleText": "热门电影"
+}
